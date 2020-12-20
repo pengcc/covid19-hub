@@ -1,0 +1,28 @@
+@import '~Styles/base';
+
+$namespace: 'elementFooter';
+
+.#{$namespace} {
+  display: flex;
+  flex-direction: row;
+  background-color: $white;
+  width: 100%;
+  padding: 32px 160px;
+  flex: 0 0 auto;
+
+  .title {
+    color: $white;
+    text-align: center;
+    font-size: $px18;
+    font-weight: $medium;
+    margin-bottom: 32px;
+  }
+
+  .siteMap {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    align-items: center;
+  }
+
+}

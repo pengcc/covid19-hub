@@ -1,0 +1,12 @@
+
+    @import '~Styles/base';
+
+    $namespace: 'antDatePicker';
+
+    .#{$namespace} {
+        width: auto;
+
+        .picker {
+            width: 160px;
+        }
+    }

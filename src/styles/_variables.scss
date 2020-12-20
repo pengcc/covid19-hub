@@ -1,0 +1,19 @@
+
+$zIndex-map: (
+    index1: 10,
+    index2: 20,
+    index3: 30,
+    index4: 40,
+    index5: 50,
+    indexMax: 99
+);
+
+$headerHeight: 60px;
+
+$chartTitleHeight: 35px;
+
+$chartActionRowHeight: 35px;
+
+@mixin set-zIndex($index) {
+    z-index: map-get($zIndex-map, $index);
+}

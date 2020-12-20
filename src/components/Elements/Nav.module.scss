@@ -1,0 +1,41 @@
+@import '~Styles/base';
+
+
+$nav-namespace: 'elementNav';
+
+.#{$nav-namespace} {
+  min-width: 150px;
+  height: $headerHeight;
+  margin: 0 auto;
+ 
+  .list {
+      width: 70%;
+      max-width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+      @include apply-from(tablet) {
+          flex-direction: row;
+      }
+      list-style: none;
+      align-items: center;
+
+      &__item {
+        min-width: 60px;
+        width: auto;
+        display: inline-block;
+        text-align: center;
+        text-transform: capitalize;
+
+        a {
+          color: $headerText;
+
+          &.selected {
+            color: $headerTextActive;
+          }
+        }
+      }
+    }
+}
